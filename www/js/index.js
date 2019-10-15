@@ -561,7 +561,7 @@
 	
 	        let {left, top} = $cell.position();
 	
-	        left = left > 300 ? 290 : left;
+	        left = left > 300 ? 200 : left;
 	
 	        this._$panel
 	            .css({
@@ -578,4 +578,4 @@
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.ts.map

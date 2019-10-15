@@ -10,15 +10,9 @@ module.exports = {
         extensions:['.js']
     },
     module:{
-        loader:[
-            {
-                test:/\.js$/,
-                loader:"babel",
-                exclude:"node_modules",
-                query:{
-                    presets:['es2015']
-                }
-            }
+        rules:[
+            {test:/\.ts$/,use:"ts-loader"},
+            {test:/\.js$/,use:"babel-loader"}
         ]
     }
 }
